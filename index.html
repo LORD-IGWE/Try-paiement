@@ -4,43 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accès au contenu payant</title>
+    <title>Site de Streaming</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- En-tête -->
     <header>
-<h1>Bienvenue sur notre site !</h1>
+        <div class="logo">
+            <h1>crazyStream</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+<!-- Section vidéo avec fond -->
+    <section class="streaming-section">
+        <div class="video-container">
+            <h2>Regarde ton film préféré</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Ton navigateur ne supporte pas la lecture vidéo.
+            </video>
+        </div>
+    </section>
 
-    <main>
-        <section>
-            <h2>Accédez à notre contenu premium</h2>
-            <p>Pour accéder à notre contenu exclusif, veuillez effectuer un paiement de 10€ via PayPal.</p>
-            
-            <!-- Formulaire PayPal pour effectuer un paiement -->
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="TON_BOUTON_ID_PAYPAL">
-                <input type="submit" value="Payer avec PayPal" name="submit">
-            </form>
-        </section>
-    </main>
+    <!-- Section des recommandations -->
+    <section class="recommendations">
+        <h2>Recommandations</h2>
+        <div class="recommendation-items">
+            <div class="recommendation-item">
+                <img src="https://via.placeholder.com/150" alt="Film 1">
+                <h3>Film 1</h3>
+            </div>
+            <div class="recommendation-item">
+                <img src="https://via.placeholder.com/150" alt="Film 2">
+                <h3>Film 2</h3>
+            </div>
+            <div class="recommendation-item">
+                <img src="https://via.placeholder.com/150" alt="Film 3">
+                <h3>Film 3</h3>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mon Site Web</p>
+        <p>&copy; 2025 StreamCrazy - Tous droits réservés</p>
     </footer>
 
 </body>
 </html>
-   <style>
-    /* CSS pour ajouter l'image de fond */
-      body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh; /* L'élément body prend toute la hauteur de la fenêtre */
-            background-image: url('https://i.imgur.com/uamGADL.jpeg'); /* Remplace l'URL par ton image */
-            background-size: cover; /* L'image couvre toute la fenêtre */
-            background-position: center; /* L'image est centrée dans la fenêtre */
-            background-repeat: no-repeat; /* L'image ne se répète pas */
-        }
+
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .logo h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section Streaming avec fond */
+.streaming-section {
+    background-image: url('https://i.imgur.com/7NErGe8.jpeg'); /* Remplace par une vraie image de fond */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.streaming-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.video-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Section des recommandations */
+.recommendations {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #222;
+}
+
+.recommendations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffcc00;
+}
+
+.recommendation-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recommendation-item {
+    text-align: center;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recommendation-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
