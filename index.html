@@ -4,177 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Streaming</title>
+    <title>AnimeStream</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- En-tête -->
+    <!-- En-tête du site -->
     <header>
         <div class="logo">
-            <h1>crazyStream</h1>
+            <h1>AnimeStream</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">Films</a></li>
                 <li><a href="#">Séries</a></li>
+                <li><a href="#">Films</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-<!-- Section vidéo avec fond -->
-    <section class="streaming-section">
-        <div class="video-container">
-            <h2>Regarde ton film préféré</h2>
-            <video controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                Ton navigateur ne supporte pas la lecture vidéo.
-            </video>
-        </div>
-    </section>
 
-    <!-- Section des recommandations -->
-    <section class="recommendations">
-        <h2>Recommandations</h2>
-        <div class="recommendation-items">
-            <div class="recommendation-item">
-                <img src="https://via.placeholder.com/150" alt="Film 1">
-                <h3>Film 1</h3>
-            </div>
-            <div class="recommendation-item">
-                <img src="https://via.placeholder.com/150" alt="Film 2">
-                <h3>Film 2</h3>
-            </div>
-            <div class="recommendation-item">
-                <img src="https://via.placeholder.com/150" alt="Film 3">
-                <h3>Film 3</h3>
-            </div>
+    <!-- Section d'accueil avec fond -->
+    <section class="hero">
+        <div class="overlay">
+            <h2>Bienvenue sur AnimeStream</h2>
+            <p>Découvrez les derniers animes en streaming !</p>
+            <button id="payBtn">Accédez aux Animes</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 StreamCrazy - Tous droits réservés</p>
+        <p>&copy; 2025 AnimeStream - Tous droits réservés</p>
     </footer>
 
-</body>
-</html>
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #333;
-    color: white;
-    line-height: 1.6;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-header .logo h1 {
-    color: #ffcc00;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Section Streaming avec fond */
-.streaming-section {
-    background-image: url('https://i.imgur.com/7NErGe8.jpeg'); /* Remplace par une vraie image de fond */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.streaming-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-
-.video-container {
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-.recommendations {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #222;
-}
-
-.recommendations h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #ffcc00;
-}
-
-.recommendation-items {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.recommendation-item {
-    text-align: center;
-    background-color: #444;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-
-.recommendation-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.recommendation-item h3 {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: #ffcc00;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-footer p {
-    font-size: 1rem;
-    color: #ccc;
-}
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script> <!-- Remplace par ton client ID PayPal -->
