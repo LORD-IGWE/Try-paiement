@@ -1,0 +1,137 @@
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #121212;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .logo h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section d'accueil avec fond animé */
+.hero {
+    background-image: url('https://i.imgur.com/JjHv9So.jpeg'); /* Remplace par l'image d'anime */
+    background-size: cover;
+    background-position: center;height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Section abonnement */
+.subscription {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1a1a1a;
+}
+
+.subscription h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.plan {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.plan p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.plan button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+background-color: rgba(0, 0, 0, 0.8);
+}

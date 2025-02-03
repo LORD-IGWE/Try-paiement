@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimeStream</title>
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -16,20 +16,38 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">Films</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#subscription">Abonnement</a></li>
+                <li><a href="#content">Contenu</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Section d'accueil avec fond -->
-    <section class="hero">
+    <!-- Section d'accueil avec fond animé -->
+    <section id="home" class="hero">
         <div class="overlay">
             <h2>Bienvenue sur AnimeStream</h2>
-            <p>Découvrez les derniers animes en streaming !</p>
-            <button id="payBtn">Accédez aux Animes</button>
+            <p>Les meilleurs animes sont ici !</p>
+            <button id="subscribeBtn">Commencer l'abonnement</button>
+        </div>
+    </section>
+
+    <!-- Section d'abonnement -->
+    <section id="subscription" class="subscription">
+        <h2>Choisissez votre abonnement</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Abonnement de base</h3>
+                <p>Accès à un anime par mois</p>
+                <p><span>5€</span> par mois</p>
+                <button class="subscribe" id="basicPlan">S'abonner</button>
+            </div>
+            <div class="plan">
+                <h3>Abonnement Premium</h3>
+                <p>Accès à tous les animes</p>
+<p><span>10€</span> par mois</p>
+                <button class="subscribe" id="premiumPlan">S'abonner</button>
+            </div>
         </div>
     </section>
 
@@ -38,4 +56,11 @@
         <p>&copy; 2025 AnimeStream - Tous droits réservés</p>
     </footer>
 
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script> <!-- Remplace par ton client ID PayPal -->
+    <script src="script.js"></script>
+</body>
+
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
+<script src="script.js"></script>
+
+</html>
+ 
